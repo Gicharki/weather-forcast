@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="shortcut icon" href="img/weather-app.png" type="image/x-icon">
+    </head>
+    <body>
+
+              
+        <header>
+            <img src="img/weather-app.png" alt="" srcset="">
+            <h1> Weather Forecast</h1>
+        </header>
+    
+        <section>
+        
+        <div class="input">  
+            <div>
+            <input type="text" id="city-input" placeholder="search a place">
+            </div>
+            <div class="button">
+            <button class="search" onclick="getWeather()">Search</button>
+            <button class="reset"><a href="/">reset</a></button>
+            </div>
+        </div>
+        
+        <div class="container" id="weather-cards">
+            
+        </div>
+
+    </section>
+
+        
+        <script src="app.js"></script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,211 @@
+ 
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+
+		body {
+			font-family: "Futura,Helvetica,Arial,sans-serif";
+			background-color: grey;
+			color: rgb(15, 13, 13);
+
+			
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			
+		}
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+    h1{
+      margin: 34px;
+    }
+
+
+		header {
+			background-color: dimgrey;
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+		}
+
+
+    .input{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+		input[type="text"] {
+			padding: 11px;
+    font-size: 20px;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    margin: 38px 29%;
+		}
+
+    .button{
+      
+      width: 40%;
+      margin: 24px 29%;
+
+    }
+
+
+    .reset{
+      padding: 10px 101px;
+    }
+
+    .search{
+      padding: 10px 84px;
+      margin-left: 21px;
+    }
+
+
+		button {
+
+			
+			background-color: #252a2e;
+			color: black;
+			font-size: 24px;
+			
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+      
+			
+		}
+
+		button:hover {
+			background-color: dimgrey;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 40px;
+		}
+
+		.card {
+			margin: 20px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.7);
+			text-align: center;
+			width: 200px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+		}
+
+	
+
+		img {
+      height: 76px;
+      margin: 30px;
+		}
+
+
+
+        /* For screens smaller than 600px */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+    margin: 20px;
+    min-width: auto;
+    max-width: auto;
+    width: 90%;
+  }
+  input[type="text"] {
+    width: 80%;
+    margin: 24px 10%;
+  }
+  .button {
+    width: 80%;
+    margin: 16px 10%;
+  }
+  .reset {
+    padding: 10px 64px;
+  }
+  .search {
+    padding: 10px 58px;
+    margin-left: 12px;
+  }
+  .card {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+  }
+  img {
+    height: 50px;
+    margin: 10px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+/* For screens between 600px and 1200px */
+@media (min-width: 600px) and (max-width: 1200px) {
+  main {
+    min-width: auto;
+    max-width: auto;
+    width: 90%;
+  }
+  .card {
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+  }
+  img {
+    height: 60px;
+    margin: 20px;
+  }
+  .reset{
+    padding: 10px 32px;
+  }
+
+  .search{
+    padding: 10px 24px;
+    margin-left: 21px;
+  }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+  main {
+    min-width: 600px;
+    max-width: 800px;
+    width: 80%;
+  }
+  .card {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+  }
+  img {
+    height: 76px;
+    margin: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  
+}
