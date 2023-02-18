@@ -118,7 +118,7 @@
 
 
 
-        /* For screens smaller than 600px */
+
 @media (max-width: 600px) {
   main {
     padding: 20px;
@@ -159,7 +159,7 @@
   }
 }
 
-/* For screens between 600px and 1200px */
+
 @media (min-width: 600px) and (max-width: 1200px) {
   main {
     min-width: auto;
@@ -185,7 +185,7 @@
   }
 }
 
-/* For screens larger than 1200px */
+
 @media (min-width: 1200px) {
   main {
     min-width: 600px;
