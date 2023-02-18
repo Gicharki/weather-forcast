@@ -1,4 +1,4 @@
-const apiKey = "48716ee51db928e8693f12b2a85f4f97"; // Replace with your OpenWeatherMap API key
+const apiKey = "48716ee51db928e8693f12b2a85f4f97"; 
 
 		function getWeather() {
 			const cityInput = document.getElementById("city-input");
@@ -15,7 +15,7 @@ const apiKey = "48716ee51db928e8693f12b2a85f4f97"; // Replace with your OpenWeat
 				.then(response => response.json())
 				.then(data => {
 					const weatherCards = document.getElementById("weather-cards");
-					weatherCards.innerHTML = ""; // Clear previous cards
+					weatherCards.innerHTML = "";
 
 					for (let i = 0; i < data.list.length; i += 8) {
 						const date = new Date(data.list[i].dt * 1000);
